@@ -1,4 +1,5 @@
 import express from 'express';
+import router from './router/router.mjs';
 import { createServer } from 'http';
 
 const app = express();
@@ -11,3 +12,4 @@ server.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT}`);
 });
 
+app.use('/bfhl', router);
