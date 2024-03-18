@@ -8,7 +8,10 @@ router.route('/').post((req, res) => {
     const evenArr = [];
     const oddArr = [];
     const alpha = [];
-    if (!data) res.status(400).send("Bad Request");
+    if (data.length === 0) res.status(400).send({
+        is_sucess: false,
+        message: "Wrong data input"
+    });
 
     
     for (let i = 0; i < data.length; i++) {
