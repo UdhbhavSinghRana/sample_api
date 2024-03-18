@@ -26,9 +26,9 @@ router.route('/').post((req, res) => {
         userId: "bhavya_dalela_16062003",
         roll_number: "2110990366",
         email: "bhavya0366.be21@chitkara.edu.in",
-        evenArr: evenArr,
-        oddArr: oddArr,
-        alpha: alpha
+        even_numbers: evenArr,
+        odd_numbers: oddArr,
+        alphabets: alpha
     }
 
     res.status(200).send(createData);
