@@ -23,7 +23,8 @@ router.route('/').post((req, res) => {
     }
 
     const createData = {
-        userId: "bhavya_dalela_16062003",
+        is_sucess: true,
+        user_id: "bhavya_dalela_16062003",
         roll_number: "2110990366",
         email: "bhavya0366.be21@chitkara.edu.in",
         even_numbers: evenArr,
